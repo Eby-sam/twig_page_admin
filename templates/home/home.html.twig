@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block title %} projet admin twig {% endblock %}
+
+{% block body %}
+    <div class="header">
+        <h1>
+            {% block titre %}
+               Page Administrateur (Twig)
+            {% endblock %}
+        </h1>
+    </div>
+    <div class="body">
+        <div class="corp" id="connect">personnes connect</div>
+        <div class="corp" id="article">
+            <form action="/index.php?c=article&a=addArticle" method="post">
+                <label for="title">Titre de l'article :</label>
+                <input type="text" id="title" name="title"><br>
+                <label for="content">Texte de l'article :</label>
+                <textarea id="content" name="content"></textarea><br>
+                <input type="submit" name="submit" value="Soumettre l'article">
+            </form>
+        </div>
+        <div class="corp" id="form">
+        </div>
+    </div>
+{% endblock %}
