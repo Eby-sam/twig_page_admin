@@ -13,14 +13,24 @@
         <div class="corp" id="connect">personnes connect</div>
         <div class="corp" id="article">
             <form action="/index.php?c=article&a=addArticle" method="post">
+                <h2 style="text-align: center">création d'un article</h2>
                 <label for="title">Titre de l'article :</label>
                 <input type="text" id="title" name="title"><br>
                 <label for="content">Texte de l'article :</label>
                 <textarea id="content" name="content"></textarea><br>
                 <input type="submit" name="submit" value="Soumettre l'article">
             </form>
+            <form action="/index.php?c=article&a=upArticle" method="post">
+                <h2 style="text-align: center">modification d'un article</h2>
+                <label for="title">nouveau titre :</label>
+                <input type="text" id="title" name="title"><br>
+                <label for="content">nouveau text :</label>
+                <textarea id="content" name="content"></textarea><br>
+                <input type="submit" name="submit" value="Soumettre l'article">
+            </form>
         </div>
         <div class="corp" id="form">
+            <?php ?>
         </div>
     </div>
 {% endblock %}

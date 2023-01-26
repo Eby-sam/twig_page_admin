@@ -43,8 +43,13 @@ html {
     height: 100%;
     background-color: #ff4063;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 #form {
